@@ -6,100 +6,106 @@
   <title>AP Bio Guide</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
       color: #1f2933;
 
-      /* Background image setup */
-      background:
-        linear-gradient(rgba(245,253,251,0.92), rgba(255,255,255,0.96)),
-        url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg");
-
+      background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
-      background-position: center top;
-      background-size: contain; /* keeps image shape */
       background-attachment: fixed;
-      background-color: #f5fdfb;
     }
 
+    /* Top header */
     header {
       background: #0f766e;
       color: white;
-      padding: 28px;
       text-align: center;
-      font-size: 2.6rem;
+      padding: 26px;
+      font-size: 2.5rem;
       font-weight: 700;
       letter-spacing: 1px;
     }
 
+    /* Navigation */
     nav {
-      background: #115e59;
-      padding: 12px 0;
       display: flex;
       justify-content: center;
-      white-space: nowrap;
+      flex-wrap: nowrap;
+      gap: 12px;
+      padding: 14px;
+      background: rgba(15,118,110,0.9);
       overflow-x: auto;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 14px;
-      font-size: 1rem;
-      padding: 8px 14px;
+      padding: 8px 16px;
       border-radius: 999px;
-      transition: background 0.25s, transform 0.2s;
+      background: rgba(255,255,255,0.18);
+      font-size: 0.95rem;
+      white-space: nowrap;
+      transition: all 0.25s ease;
     }
 
     nav a:hover {
-      background: #0f766e;
+      background: rgba(255,255,255,0.35);
       transform: translateY(-2px);
     }
 
+    /* Hero card */
     .hero {
       max-width: 900px;
-      margin: 90px auto;
-      padding: 40px 25px;
+      margin: 90px auto 0;
+      padding: 45px 35px;
       text-align: center;
-      background: rgba(255,255,255,0.9);
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(6px);
+      border-radius: 22px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
     }
 
     .hero h2 {
-      font-size: 2.5rem;
+      margin-top: 0;
+      font-size: 2.6rem;
       color: #0f766e;
-      margin-bottom: 10px;
     }
 
-    .hero .author {
-      font-size: 1rem;
-      color: #6b7280;
-      margin-bottom: 25px;
+    .author {
       font-style: italic;
+      color: #6b7280;
+      margin-bottom: 24px;
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       line-height: 1.7;
       color: #374151;
     }
 
+    /* Info cards */
     .card-row {
       display: flex;
-      gap: 20px;
+      gap: 22px;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 45px;
     }
 
     .card {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      width: 240px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.95);
+      border-radius: 18px;
+      padding: 26px;
+      width: 260px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     }
 
     .card h3 {
@@ -107,17 +113,19 @@
       color: #0f766e;
     }
 
+    /* Footer */
     footer {
-      margin-top: 100px;
-      padding: 20px;
+      margin-top: 110px;
+      padding: 22px;
       text-align: center;
-      background: #115e59;
       color: white;
+      background: rgba(15,118,110,0.95);
     }
   </style>
 </head>
 
 <body>
+
   <header>AP Bio Guide</header>
 
   <nav>
@@ -145,10 +153,12 @@
         <h3>Concept-Based</h3>
         <p>Focuses on understanding systems, not memorization.</p>
       </div>
+
       <div class="card">
         <h3>AP-Aligned</h3>
         <p>Directly follows the official AP Biology curriculum.</p>
       </div>
+
       <div class="card">
         <h3>Student-Created</h3>
         <p>Built independently to support other AP Bio students.</p>
@@ -156,6 +166,9 @@
     </div>
   </section>
 
-  <footer>© 2026 AP Bio Guide • Yunze Cai</footer>
+  <footer>
+    © 2026 AP Bio Guide • Yunze Cai
+  </footer>
+
 </body>
 </html>
