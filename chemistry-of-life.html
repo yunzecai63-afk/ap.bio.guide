@@ -1,1 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit 1: Chemistry of Life | AP Bio Guide</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      color: #1f2933;
+      background: linear-gradient(180deg, #e6fffb 0%, #f8fafc 100%);
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e, #115e59);
+      color: white;
+      padding: 42px 20px 32px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 12px auto 0;
+      max-width: 760px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
+    .topbar {
+      background: rgba(15, 118, 110, 0.95);
+      padding: 12px 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .topbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.15);
+      display: inline-block;
+      font-size: 0.95rem;
+    }
+
+    .topbar a:hover {
+      background: rgba(255,255,255,0.28);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 20px 70px;
+    }
+
+    .intro-grid,
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid #dbeafe;
+    }
+
+    .card h2,
+    .card h3 {
+      margin-top: 0;
+      color: #0f766e;
+    }
+
+    .section {
+      margin-top: 34px;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+      color: #0f766e;
+    }
+
+    .section-sub {
+      color: #52606d;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ccfbf1;
+      color: #115e59;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 4px 6px 0 0;
+    }
+
+    .highlight {
+      background: #f0fdfa;
+      border-left: 5px solid #14b8a6;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-top: 14px;
+      line-height: 1.6;
+    }
+
+    .quick-review {
+      background: linear-gradient(135deg, #ffffff, #ecfeff);
+      border: 2px solid #99f6e4;
+    }
+
+    .diagram {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+      border: 1px solid #d1fae5;
+    }
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background: #0f766e;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 40px;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Unit 1: Chemistry of Life</h1>
+    <p>
+      The molecules of life explain how living systems are built, how water supports life,
+      and how macromolecules help organisms store information, build structures, and transfer energy.
+    </p>
+  </header>
+
+  <div class="topbar">
+    <a href="index.html">Home</a>
+    <a href="#overview">Overview</a>
+    <a href="#water">Water</a>
+    <a href="#macromolecules">Macromolecules</a>
+    <a href="#review">Quick Review</a>
+  </div>
+
+  <main class="container">
+
+    <section id="overview" class="section">
+      <h2 class="section-title">What this unit covers</h2>
+      <p class="section-sub">
+        This unit focuses on the chemistry that makes life possible: the special properties of water and the structure and function of the major biological macromolecules.
+      </p>
+
+      <div class="card">
+        <span class="tag">AP Bio Unit 1</span>
+        <span class="tag">Chemistry of Life</span>
+        <span class="tag">Foundational Unit</span>
+        <p class="small" style="margin-top: 14px;">
+          Main CED-aligned topics:
+        </p>
+        <ul>
+          <li>Elements of life</li>
+          <li>Structure of water and hydrogen bonding</li>
+          <li>Carbohydrates</li>
+          <li>Lipids</li>
+          <li>Proteins</li>
+          <li>Nucleic acids</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="water" class="section">
+      <h2 class="section-title">Water: the molecule that makes life possible</h2>
+
+      <div class="section-grid">
+        <div class="card">
+          <h3>Why water is polar</h3>
+          <ul>
+            <li>Oxygen is more electronegative than hydrogen.</li>
+            <li>Electrons are shared unequally in water.</li>
+            <li>Oxygen becomes slightly negative, and hydrogens become slightly positive.</li>
+            <li>This polarity allows hydrogen bonding between water molecules.</li>
+          </ul>
+
+          <div class="highlight">
+            Water’s polarity is the reason it has unusual life-supporting properties.
+          </div>
+        </div>
+
+        <div class="card diagram">
+          <h3>Water polarity</h3>
+          <svg viewBox="0 0 320 220" aria-label="Water molecule diagram">
+            <circle cx="160" cy="70" r="32" fill="#99f6e4"></circle>
+            <circle cx="95" cy="145" r="24" fill="#ffffff" stroke="#0f766e" stroke-width="3"></circle>
+            <circle cx="225" cy="145" r="24" fill="#ffffff" stroke="#0f766e" stroke-width="3"></circle>
+
+            <line x1="140" y1="95" x2="110" y2="125" stroke="#0f766e" stroke-width="4"></line>
+            <line x1="180" y1="95" x2="210" y2="125" stroke="#0f766e" stroke-width="4"></line>
+
+            <text x="151" y="78" font-size="22" fill="#115e59" font-weight="bold">O</text>
+            <text x="88" y="152" font-size="20" fill="#115e59" font-weight="bold">H</text>
+            <text x="218" y="152" font-size="20" fill="#115e59" font-weight="bold">H</text>
+
+            <text x="132" y="30" font-size="20" fill="#0f766e">δ−</text>
+            <text x="65" y="195" font-size="20" fill="#0f766e">δ+</text>
+            <text x="235" y="195" font-size="20" fill="#0f766e">δ+</text>
+          </svg>
+        </div>
+
+        <div class="card">
+          <h3>Key properties of water</h3>
+          <ul>
+            <li><strong>Cohesion:</strong> water sticks to water</li>
+            <li><strong>Adhesion:</strong> water sticks to other polar surfaces</li>
+            <li><strong>High specific heat:</strong> resists temperature change</li>
+            <li><strong>Heat of vaporization:</strong> evaporation cools surfaces</li>
+            <li><strong>Excellent solvent:</strong> surrounds ions and polar molecules</li>
+            <li><strong>Ice is less dense than liquid water:</strong> important for aquatic life</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="macromolecules" class="section">
+      <h2 class="section-title">Macromolecules</h2>
+      <p class="section-sub">
+        Living things are built from large biological molecules. Each has a different structure and job.
+      </p>
+
+      <div class="intro-grid">
+        <div class="card">
+          <h3>Carbohydrates</h3>
+          <ul>
+            <li>Usually made of carbon, hydrogen, and oxygen</li>
+            <li>Monomers: monosaccharides</li>
+            <li>Examples: glucose, fructose, starch, glycogen, cellulose</li>
+            <li>Main jobs: quick energy, energy storage, structural support</li>
+          </ul>
+          <div class="highlight">
+            Starch stores energy in plants. Glycogen stores energy in animals. Cellulose helps build plant cell walls.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Lipids</h3>
+          <ul>
+            <li>Hydrophobic and mostly nonpolar</li>
+            <li>Not true polymers</li>
+            <li>Examples: fats, phospholipids, steroids</li>
+            <li>Main jobs: long-term energy storage, membranes, signaling</li>
+          </ul>
+          <div class="highlight">
+            Saturated fats have no double bonds. Unsaturated fats have one or more double bonds.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Proteins</h3>
+          <ul>
+            <li>Made of amino acid monomers</li>
+            <li>Linked by peptide bonds</li>
+            <li>Functions include structure, transport, signaling, movement, and defense</li>
+            <li>Shape determines function</li>
+          </ul>
+          <div class="highlight">
+            Levels of protein structure: primary, secondary, tertiary, and quaternary.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Nucleic Acids</h3>
+          <ul>
+            <li>Monomers: nucleotides</li>
+            <li>Nucleotide parts: sugar + phosphate + nitrogenous base</li>
+            <li>DNA stores hereditary information</li>
+            <li>RNA helps express genetic information</li>
+          </ul>
+          <div class="highlight">
+            DNA uses A, T, C, G. RNA uses A, U, C, G.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Building and breaking molecules</h2>
+
+      <div class="section-grid">
+        <div class="card">
+          <h3>Dehydration synthesis</h3>
+          <p>
+            Builds larger molecules by removing water.
+          </p>
+          <div class="highlight">
+            Monomer + monomer → polymer + H₂O
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Hydrolysis</h3>
+          <p>
+            Breaks larger molecules apart by adding water.
+          </p>
+          <div class="highlight">
+            Polymer + H₂O → smaller molecules
+          </div>
+        </div>
+
+        <div class="card diagram">
+          <h3>Quick visual</h3>
+          <svg viewBox="0 0 360 140" aria-label="Dehydration synthesis and hydrolysis diagram">
+            <text x="20" y="35" font-size="18" fill="#115e59">Monomer</text>
+            <circle cx="95" cy="28" r="12" fill="#99f6e4"></circle>
+            <text x="128" y="35" font-size="18" fill="#115e59">+</text>
+            <text x="155" y="35" font-size="18" fill="#115e59">Monomer</text>
+            <circle cx="240" cy="28" r="12" fill="#5eead4"></circle>
+            <text x="275" y="35" font-size="18" fill="#115e59">→ Polymer</text>
+            <circle cx="140" cy="95" r="12" fill="#99f6e4"></circle>
+            <circle cx="170" cy="95" r="12" fill="#5eead4"></circle>
+            <circle cx="200" cy="95" r="12" fill="#2dd4bf"></circle>
+            <line x1="152" y1="95" x2="158" y2="95" stroke="#115e59" stroke-width="3"></line>
+            <line x1="182" y1="95" x2="188" y2="95" stroke="#115e59" stroke-width="3"></line>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="review" class="section">
+      <h2 class="section-title">Quick review</h2>
+
+      <div class="card quick-review">
+        <h3>Must-know ideas for Unit 1</h3>
+        <ul>
+          <li>Water is polar, so it forms hydrogen bonds.</li>
+          <li>Hydrogen bonding explains cohesion, adhesion, temperature stability, and solvent properties.</li>
+          <li>Carbohydrates store energy and provide structure.</li>
+          <li>Lipids store long-term energy and form membranes.</li>
+          <li>Proteins are made of amino acids and depend on shape.</li>
+          <li>Nucleic acids store and transmit genetic information.</li>
+          <li>Dehydration builds polymers; hydrolysis breaks them apart.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 AP Bio Guide • Unit 1: Chemistry of Life • Yunze Cai
+  </footer>
+
+</body>
+</html>
