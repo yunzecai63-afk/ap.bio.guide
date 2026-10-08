@@ -1,1 +1,0 @@
-Upload individual extracted files to GitHub repository ROOT. The first file visible in GitHub must be index.html (NOT a folder and NOT a ZIP). Set Settings > Pages > main > /(root). Then wait for Actions green check.
